@@ -189,7 +189,7 @@ html {
 ```
 
 ### 세미콜론
-key: value 선언 후 `;semi-colon`으로 마무리한다.
+프로퍼티 선언 후 반드시 `;semi-colon`으로 마무리한다.
 ```css
 /* No */
 .my_class_name {
@@ -227,7 +227,7 @@ key: value 선언 후 `;semi-colon`으로 마무리한다.
 ```
 
 ### 프로퍼티 띄어쓰기
-key: value 구성에서 `:colon`과 `value`사이는 한 칸 띄어쓰기 한다.  
+프로퍼티 구성에서 `:colon`과 `value`사이는 한 칸 띄어쓰기 한다.  
 위와 같이 방식은 [Emmet](https://emmet.io) 사용하면 편하게 작성할 수 있다.  
 `calc()`등 기능을 사용할 경우 연산자와 값 사이는 한 칸 띄어쓰기 한다.  
 ```css
