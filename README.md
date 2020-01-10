@@ -316,9 +316,9 @@ document.querySelector('.js_close_layer').addEventListener(function() {
 * something.scss `// output for only something`
 
 ## LibSass
-NPM을 통해 [node-sass](https://github.com/sass/node-sass), [webpack](https://webpack.js.org)을 설치 후 Sass를 컴파일한다.  
-Sass는 원래 `Ruby`로 만들어졌지만 [node-sass](https://github.com/sass/node-sass)는 C/C++ 기반 엔진인 LibSass을 사용한다.  
-이에 따라 `Ruby, Dart, LibSass` 각 엔진 별 정의된 스펙이 다를 수 있으니 참고한다.
+* NPM을 통해 [node-sass](https://github.com/sass/node-sass), [webpack](https://webpack.js.org)을 설치 후 Sass를 컴파일한다.  
+* Sass는 원래 `Ruby`로 만들어졌지만 [node-sass](https://github.com/sass/node-sass)는 C/C++ 기반 엔진인 `LibSass`을 사용한다.  
+* `Ruby, Dart, LibSass` 각 엔진 별 정의된 스펙이 다를 수 있으니 참고한다.
 
 ## 라이브러리
 [Compass](http://compass-style.org/), [Bourbon](https://www.bourbon.io/)과 같은 외부 프레임워크 또는 라이브러리는 설치 및 사용하지 않는다.
@@ -364,8 +364,8 @@ $color: (
 ```
 
 ## 블럭 스코프 스타일
-단일 프로퍼티로 구성하더라도 한 줄로 선언하지 않는다.  
-시작 괄호는 셀렉터 문자열과 한 칸 띄우고, 끝 괄호는 개행한 후 선언한다.  
+* 단일 프로퍼티로 구성하더라도 한 줄로 선언하지 않는다.  
+* 시작 괄호는 셀렉터 문자열과 한 칸 띄우고, 끝 괄호는 개행한 후 선언한다.  
 ```scss
 /* No */
 .my_class_name{ overflow: hidden; }
@@ -395,9 +395,9 @@ $color: (
 ```
 
 ## 주석
-```scss
 * 가급적 라인 주석을 권장한다.
 * 프로퍼티와 같은 라인에 작성하지 않고 프로퍼티 바로 윗 줄에 주석을 작성한다.
+```scss
 /* No */
 .my_class_name {
   z-index: 10; // 주석 내용
@@ -502,8 +502,8 @@ Extend는 사용을 제한한다. 대안으로 Include를 사용해 Mixins등을
 ```
 
 ## 벤더 프리픽스
-브라우저 또는 버전별 스펙 호환을 위해 사용되는 벤더 프리픽스는 직접 작성하지 않는다.  
-[Autoprefixer](https://github.com/postcss/autoprefixer)를 `webpack`과 같은 모듈번들러를 통해 자동으로 적용되도록 설정한다.  
+* 브라우저 또는 버전별 스펙 호환을 위해 사용되는 벤더 프리픽스는 직접 작성하지 않는다.  
+* [Autoprefixer](https://github.com/postcss/autoprefixer)를 `webpack`과 같은 모듈번들러를 통해 자동으로 적용되도록 설정한다.  
 ```scss
 /* No */
 .my_class_name {
